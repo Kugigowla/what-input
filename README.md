@@ -2,36 +2,6 @@
 
 __A global utility for tracking the current input method (mouse, keyboard or touch).__
 
-## What Input is now v4.3.1
-
-What Input adds data attributes to the `<html>` tag based on the type of input being used. It also exposes a simple API that can be used for scripting interactions.
-
-### July 12, 2017
-
-* Updated: added passive to `touchstart` event.
-
-### July 3, 2017
-
-* Updated: custom events can now be registered and unregistered.
-
-### June 13, 2017
-
-* Updated: Typing _in_ form inputs does not change input type, but tabbing between inputs _does_ initiate a switch from `mouse` to `keyboard`.
-
-### June 12, 2017
-
-* Added: passive event listener for `wheel` event.
-* Added: ability to fire custom functions when 'intent' or 'input' changes.
-
-### Changes from v3
-
-* `mousemove` and `pointermove` events no longer affect the `data-whatinput` attribute.
-* A new `data-whatintent` attribute now works like v3. This change is intended to separate direct interaction from potential.
-* Key logging and the corresponding `whatInput.keys()` API option have been removed.
-* Event binding and attributes are now added to the `<html>` tag to eliminate the need to test for `DOMContentLoaded`.
-* The `whatInput.set()` API option has been removed.
-* A new set of `whatinput-types-[type]` classes are now added as inputs are detected. New classes are added but existing ones remain, creating the same output as what the `whatInput.types()` returns.
-
 ## How it works
 
 What Input uses event bubbling on the `<html>` tag to watch for mouse, keyboard and touch events (via `mousedown`, `keydown` and `touchstart`). It then sets or updates a `data-whatinput` attribute.
@@ -215,6 +185,38 @@ Add your own, or grab the bundle included here.
 Check out the demo to see What Input in action.
 
 http://ten1seven.github.io/what-input
+
+## Changelog
+
+### What Input is now v4.3.1
+
+What Input adds data attributes to the `<html>` tag based on the type of input being used. It also exposes a simple API that can be used for scripting interactions.
+
+### July 12, 2017
+
+* Updated: added passive to `touchstart` event.
+
+### July 3, 2017
+
+* Updated: custom events can now be registered and unregistered.
+
+### June 13, 2017
+
+* Updated: Typing _in_ form inputs does not change input type, but tabbing between inputs _does_ initiate a switch from `mouse` to `keyboard`.
+
+### June 12, 2017
+
+* Added: passive event listener for `wheel` event.
+* Added: ability to fire custom functions when 'intent' or 'input' changes.
+
+### Changes from v3
+
+* `mousemove` and `pointermove` events no longer affect the `data-whatinput` attribute.
+* A new `data-whatintent` attribute now works like v3. This change is intended to separate direct interaction from potential.
+* Key logging and the corresponding `whatInput.keys()` API option have been removed.
+* Event binding and attributes are now added to the `<html>` tag to eliminate the need to test for `DOMContentLoaded`.
+* The `whatInput.set()` API option has been removed.
+* A new set of `whatinput-types-[type]` classes are now added as inputs are detected. New classes are added but existing ones remain, creating the same output as what the `whatInput.types()` returns.
 
 ## Acknowledgments
 
