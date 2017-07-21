@@ -192,24 +192,24 @@ http://ten1seven.github.io/what-input
 
 What Input adds data attributes to the `<html>` tag based on the type of input being used. It also exposes a simple API that can be used for scripting interactions.
 
-### July 12, 2017
+#### July 12, 2017
 
 * Updated: added passive to `touchstart` event.
 
-### July 3, 2017
+#### July 3, 2017
 
 * Updated: custom events can now be registered and unregistered.
 
-### June 13, 2017
+#### June 13, 2017
 
 * Updated: Typing _in_ form inputs does not change input type, but tabbing between inputs _does_ initiate a switch from `mouse` to `keyboard`.
 
-### June 12, 2017
+#### June 12, 2017
 
 * Added: passive event listener for `wheel` event.
 * Added: ability to fire custom functions when 'intent' or 'input' changes.
 
-### Changes from v3
+#### Changes from v3
 
 * `mousemove` and `pointermove` events no longer affect the `data-whatinput` attribute.
 * A new `data-whatintent` attribute now works like v3. This change is intended to separate direct interaction from potential.
